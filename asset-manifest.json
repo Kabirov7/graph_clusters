@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/graph_clusters/static/css/main.a617e044.chunk.css",
+    "main.js": "/graph_clusters/static/js/main.fad6131a.chunk.js",
+    "main.js.map": "/graph_clusters/static/js/main.fad6131a.chunk.js.map",
+    "runtime-main.js": "/graph_clusters/static/js/runtime-main.c9ebdafe.js",
+    "runtime-main.js.map": "/graph_clusters/static/js/runtime-main.c9ebdafe.js.map",
+    "static/js/2.a257d1cc.chunk.js": "/graph_clusters/static/js/2.a257d1cc.chunk.js",
+    "static/js/2.a257d1cc.chunk.js.map": "/graph_clusters/static/js/2.a257d1cc.chunk.js.map",
+    "static/js/3.65df6e62.chunk.js": "/graph_clusters/static/js/3.65df6e62.chunk.js",
+    "static/js/3.65df6e62.chunk.js.map": "/graph_clusters/static/js/3.65df6e62.chunk.js.map",
+    "index.html": "/graph_clusters/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/graph_clusters/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.a257d1cc.chunk.js.LICENSE.txt": "/graph_clusters/static/js/2.a257d1cc.chunk.js.LICENSE.txt",
+    "static/media/bezier.799a5c8c.cjs": "/graph_clusters/static/media/bezier.799a5c8c.cjs"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c9ebdafe.js",
+    "static/js/2.a257d1cc.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.fad6131a.chunk.js"
+  ]
+}
