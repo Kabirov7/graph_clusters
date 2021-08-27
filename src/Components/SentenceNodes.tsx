@@ -24,12 +24,15 @@ function Graph3dSentences() {
 			let node1 = {
 				"id": source_url,
 				"name": source_title,
-				"val": 1
+				"val": 1,
+				"source_url": source_url
 			};
 			const node2 = {
 				"id": target_url,
 				"name": target_title,
-				"val": 1
+				"val": 1,
+				"source_url": source_url
+
 			}
 			const link = {
 				"source": source_url,
@@ -53,6 +56,7 @@ function Graph3dSentences() {
 	return (
 		<div className="App">
 			<ForceGraph3D
+				nodeAutoColorBy="source_url"
 				graphData={myData}
 			/>
 		</div>
