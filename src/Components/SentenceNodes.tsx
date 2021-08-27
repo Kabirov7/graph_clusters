@@ -18,8 +18,8 @@ function Graph3dSentences() {
 			// console.log(item)
 			let source_title: string = item.original_article_title;
 			let source_url: string = item.original_article_url;
-			let target_title: string = item.similar_article_url;
-			let target_url: string = item.similar_article_title;
+			let target_title: string = item.similar_article_title;
+			let target_url: string = item.similar_article_url;
 
 			let node1 = {
 				"id": source_url,
