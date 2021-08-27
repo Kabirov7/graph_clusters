@@ -13,27 +13,43 @@ function Graph3dSentences() {
 	useEffect(() => {
 		let all_nodes: Array<any> = [];
 		let linked_nodes: Array<any> = [];
+		let unique: Array<string> = [];
 		Object.values(graphs).map((item: any, idx: number) => {
 			// console.log(item)
+			let source_title: string = item.original_article_title;
+			let source_url: string = item.original_article_url;
+			let target_title: string = item.similar_article_url;
+			let target_url: string = item.similar_article_title;
+
 			let node1 = {
-				"id": item.original_article_url,
-				"name": item.original_article_title,
+				"id": source_url,
+				"name": source_title,
 				"val": 1
 			};
 			const node2 = {
-				"id": item.similar_article_url,
-				"name": item.similar_article_title,
+				"id": target_url,
+				"name": target_title,
 				"val": 1
 			}
 			const link = {
-				"source": item.original_article_url,
-				"target": item.similar_article_url
+				"source": source_url,
+				"target": target_url
 			}
-			linked_nodes.push(link);
-			all_nodes.push(node1);
-			all_nodes.push(node2);
+			if (!unique.includes(node1.id)) {
+				all_nodes.push(node1);
+				unique.push(node1.id);
+			}
+			if (!unique.includes(node2.id)) {
+				all_nodes.push(node2);
+				unique.push(node2.id);
+			}
+			// if (!unique.includes(node1.id)) {
+				linked_nodes.push(link);
+			// }
 		})
 		setMyData({"nodes": all_nodes, "links": linked_nodes})
+
+
 	}, [])
 
 	return (
