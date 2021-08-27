@@ -33,7 +33,7 @@ function Graph3dSentences() {
 			}
 			const link = {
 				"source": source_url,
-				"target": target_title
+				"target": target_url
 			}
 			if (!unique.includes(node1.id)) {
 				all_nodes.push(node1);
